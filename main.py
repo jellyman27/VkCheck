@@ -3,7 +3,7 @@ import vk_api
 print("Авторизация пользователя")
 login = input("Введите ваш логин(Номер телефона): ")
 password = input("Введите ваш пароль: ")
-vk_session = vk_api.VkApi(login, pasword)
+vk_session = vk_api.VkApi(login, password)
 vk_session.auth()
 vk = vk_session.get_api()
 id_group = input("Введите ID группы: ")
